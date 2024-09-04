@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/products.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Font-Awesome-Pro/css/all.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" /> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <title>Products</title>
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="header">
+            <div class="container">
+                <div class="row info">
+                    <div class=" contact p-2 col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                        <p> THÔNG TIN LIÊN HỆ &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-light fa-hand-point-right"></i>
+                        </p>
+                        <div class="hotline">
+                            <p class="number">HOTLINE: </p>&nbsp;&nbsp;
+                            <p> 0962138618 </p>
+                        </div>
+
+                        <div class="email">
+                            <p class="eml">Email: </p2>&nbsp;&nbsp;
+                            <p> greenxpertsvietnam@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="login-cart p-2 col-xs-2 col-sm-2 col-md-2 col-lg-2 ">
+                        <a href=""><i class="fa-solid fa-cloud-arrow-down"></i> HỒ SƠ NĂNG LỰC </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="main-menu container">
+
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="logo">
+                            <a href="">
+                                <img src="./img/logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 d-flex">
+                        <ul class="menu-list">
+                            <li> <i class="fa-sharp fa-solid fa-house home-search"></i></li>
+                            <li><a href="">Giới thiệu</a></li>
+                            <li><a href="">Sản phẩm </a><i class="fa-solid fa-caret-down"></i>
+                                <ul class="submenu">
+                                    <li><a href="">Chế phẩm kiểm soát côn trùng</a></li>
+                                    <li><a href="">Diệt Mối - Phòng chống mối công trình</a></li>
+                                    <li>Máy móc - Thiết bị<a href=""></a></li>
+                                    <li><a href="">Hóa chất khử khuẩn</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Bách khoa côn trùng</a></li>
+                            <li><a href="">Tin tức</a> <i class="fa-solid fa-caret-down"></i>
+                                <ul class="submenu">
+                                    <li><a href="">Bản tin mới nhất</a></li>
+                                    <li><a href="">Kiến thức chung về côn trùng</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Dịch vụ</a></li>
+                            <li><a href="">Tuyển dụng</a> </li>
+                            <li><a href="">Văn hóa Green Xperts</a></li>
+                            <li> <i class="fa-regular fa-magnifying-glass home-search"></i></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 d-flex align-items-center justify-content-end">
+                        <a href="/lien-he" class="header-btn">
+                            ĐẶT LỊCH TƯ VẤN
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb px-0 m-0">
+                <li class="breadcrumb-item"><a href=""> Trang chủ </a></li>
+                <li class="breadcrumb-item active">
+                    <i class="fas fa-chevron-right"></i>
+                    Sản phẩm
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="products">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div id="list-products">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-6">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <a href=""><img src="./img/sp1.png" alt=""></a>
+                                    </div>
+                                    <a href="" class="product-name">
+                                        [COMBO] Maxforce Quantum Vs Blattanex Cockroch Gel
+                                    </a>
+                                    <div class="box-price">
+                                        <div class="price"> 320,000đ </div>
+                                        <div class="star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-6">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <a href=""><img src="./img/sp1.png" alt=""></a>
+                                    </div>
+                                    <a href="" class="product-name">
+                                        [COMBO DIỆT KIẾN+GIÁN] Maxforce Quantum Vs Blattanex Cockroch Gel
+                                    </a>
+                                    <div class="box-price">
+                                        <div class="price"> 320,000đ </div>
+                                        <div class="star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-6">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <a href=""><img src="./img/sp1.png" alt=""></a>
+                                    </div>
+                                    <a href="" class="product-name">
+                                        [COMBO DIỆT KIẾN+GIÁN] Maxforce Quantum Vs Blattanex Cockroch Gel
+                                    </a>
+                                    <div class="box-price">
+                                        <div class="price"> 320,000đ </div>
+                                        <div class="star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-6">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <a href=""><img src="./img/sp1.png" alt=""></a>
+                                    </div>
+                                    <a href="" class="product-name">
+                                        [COMBO DIỆT KIẾN+GIÁN] Maxforce Quantum Vs Blattanex Cockroch Gel
+                                    </a>
+                                    <div class="box-price">
+                                        <div class="price"> 320,000đ </div>
+                                        <div class="star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-6">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <a href=""><img src="./img/sp1.png" alt=""></a>
+                                    </div>
+                                    <a href="" class="product-name">
+                                        [COMBO DIỆT KIẾN+GIÁN] Maxforce Quantum Vs Blattanex Cockroch Gel
+                                    </a>
+                                    <div class="box-price">
+                                        <div class="price"> 320,000đ </div>
+                                        <div class="star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-6">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <a href=""><img src="./img/sp1.png" alt=""></a>
+                                    </div>
+                                    <a href="" class="product-name">
+                                        [COMBO DIỆT KIẾN+GIÁN] Maxforce Quantum Vs Blattanex Cockroch Gel
+                                    </a>
+                                    <div class="box-price">
+                                        <div class="price"> 320,000đ </div>
+                                        <div class="star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-6">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <a href=""><img src="./img/sp1.png" alt=""></a>
+                                    </div>
+                                    <a href="" class="product-name">
+                                        [COMBO DIỆT KIẾN+GIÁN] Maxforce Quantum Vs Blattanex Cockroch Gel
+                                    </a>
+                                    <div class="box-price">
+                                        <div class="price"> 320,000đ </div>
+                                        <div class="star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-6">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <a href=""><img src="./img/sp1.png" alt=""></a>
+                                    </div>
+                                    <a href="" class="product-name">
+                                        [COMBO DIỆT KIẾN+GIÁN] Maxforce Quantum Vs Blattanex Cockroch Gel
+                                    </a>
+                                    <div class="box-price">
+                                        <div class="price"> 320,000đ </div>
+                                        <div class="star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center mt-3">
+                            <div class="pagination-container">
+                                <ul class="pagination">
+                                    <li class="active"><a>1</a></li>
+                                    <li><a href="">2</a></li>
+                                    <li><a href="">3</a></li>
+                                    <li><a href="">4</a></li>
+                                    <li><a href="">5</a></li>
+                                    <li class="PagedList-skipToNext"><a href="" rel="next">Next</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="filter">
+                        Bộ lọc sản phẩm
+                    </div>
+                    <div class="accordion">
+                        <form class="product-search">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Tìm sản phẩm">
+                                <button type="submit">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                        <div class="card productCat">
+                            <div class="card-header">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h2 class="mb-0"> Sản phẩm </h2>
+                                    <button id="product" class="btn-card"> <i class="fas fa-chevron-down"></i></button>
+                                </div>
+                            </div>
+                            <div class="collapse show">
+                                <div class="card-body">
+                                    <label class="label-cat">
+                                        <input type="radio" name="catId">
+                                        <span class="checkmark"></span>
+                                        Tất cả sản phẩm
+                                    </label>
+                                    <label class="label-cat">
+                                        <input data-filter="" type="radio" name="catId">
+                                        <span class="checkmark"></span>
+                                        Diệt Kiến - Mối - Gián
+                                    </label>
+                                    <label class="label-cat">
+                                        <input type="radio" name="catId">
+                                        <span class="checkmark"></span>
+                                        Diệt Muỗi - Bọ gậy
+                                    </label>
+                                    <label class="label-cat">
+                                        <input type="radio" name="catId">
+                                        <span class="checkmark"></span>
+                                        Diệt Ruồi
+                                    </label>
+                                    <label class="label-cat">
+                                        <input data-filter="" type="radio" name="catId">
+                                        <span class="checkmark"></span>
+                                        Hóa chất khử khuẩn
+                                    </label>
+                                    <label class="label-cat">
+                                        <input type="radio" name="catId">
+                                        <span class="checkmark"></span>
+                                        Kiểm soát chuột
+                                    </label>
+                                    <label class="label-cat">
+                                        <input type="radio" name="catId">
+                                        <span class="checkmark"></span>
+                                        Máy móc - Thiết bị
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card productCat">
+                            <div class="card-header">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h2 class="mb-0">Địa chỉ nơi bán</h2>
+                                    <button id="city" class="btn-card"> <i class="fas fa-chevron-down"></i> </button>
+                                </div>
+                            </div>
+                            <div class="collapse show">
+                                <div class="card-body">
+                                    <label class="label-cat">
+                                        <input type="radio" name="catId">
+                                        <span class="checkmark"></span>
+                                        Tất cả
+                                    </label>
+                                    <label class="label-cat">
+                                        <input data-filter="" type="radio" name="catId">
+                                        <span class="checkmark"></span>
+                                        Đà Nẵng
+                                    </label>
+                                    <label class="label-cat">
+                                        <input type="radio" name="catId">
+                                        <span class="checkmark"></span>
+                                        Hà Nội
+                                    </label>
+                                    <label class="label-cat">
+                                        <input type="radio" name="catId">
+                                        <span class="checkmark"></span>
+                                        TP.Hồ Chí Minh
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card productCat">
+                            <div class="card-header">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h2 class="mb-0"> Cửa hàng</h2>
+                                    <button id="store" class="btn-card"> <i class="fas fa-chevron-down"></i> </button>
+                                </div>
+                            </div>
+                            <div class="collapse show">
+                                <div class="card-body">
+                                    <label class="label-cat">
+                                        <input type="radio" name="catId">
+                                        <span class="checkmark"></span>
+                                        Tất cả
+                                    </label>
+                                    <label class="label-cat">
+                                        <input data-filter="" type="radio" name="catId">
+                                        <span class="checkmark"></span>
+                                        Shopee
+                                    </label>
+                                    <label class="label-cat">
+                                        <input type="radio" name="catId">
+                                        <span class="checkmark"></span>
+                                        Sendo
+                                    </label>
+                                    <label class="label-cat">
+                                        <input type="radio" name="catId">
+                                        <span class="checkmark"></span>
+                                        Tiki
+                                    </label>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slider-range-title">Giá sản phẩm</div>
+                        <div class="slider-wrapper">
+                            <div id="slider-range"></div>
+                            <div class="range-wrapper">
+                                <div class="range"></div>
+                            </div>
+                        </div>
+                        <div class="price-display">
+                            Giá từ: <span id="min-price">0</span> triệu đến <span id="max-price">50</span> triệu
+                        </div>
+                        <div data-filter="" class="filter-price">
+                            Áp dụng
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4  mb-lg-0 mb-4">
+                    <div class="logo-footer">
+                        <a href="/">
+                            <img src="./img/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="title-footer text-center">
+                        CÔNG TY TNHH GREEN XPERTS VIỆT NAM
+                    </div>
+                    <div class="info-footer">
+                        <p style="text-align: center;"><span style="font-size:14px;"></span>
+                            <span style="font-size:14px;">Địa chỉ Hà nội: Số 59 Ngõ 433 Kim Ngưu, Hai Bà Trưng, Hà
+                                Nội</span>
+                            <span style="font-size:14px;"></span>
+                        </p>
+
+                    </div>
+                    <div class="member">
+                        <div class="title text-dark">
+                            Tự hào là thành viên BNI và VPMA
+                        </div>
+                        <div class="member-list">
+                            <div class="member-item">
+                                <a>
+                                    <img src="./img/logo2.png" alt="">
+                                </a>
+                            </div>
+                            <div class="member-item">
+                                <a>
+                                    <img src="./img/logo3.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-lg-0 mb-4 d-flex flex-column align-items-center">
+                    <div class="text-lg-left text-center">
+                        <div class="title-footer">
+                            link nhanh
+                        </div>
+                        <ul class="ul-reset nav-footer">
+                            <li>
+                                <a href="">
+                                    Bách khoa Côn trùng
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/san-pham">
+                                    Sản phẩm
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Tuyển dụng
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Văn hóa Green Xperts
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 text-lg-left text-center">
+                    <div class="title-footer">
+                        fanpage
+                    </div>
+                    <div class="social-footer">
+                        <div class="embed-responsive mt-4">
+                            <div class="fb-page fb_iframe_widget">
+                                <span style="vertical-align: bottom; width: 447px; height: 130px;">
+                                    <iframe src="https://greenxperts.vn/"></iframe></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        Vui lòng đăng ký để nhận thông tin mới
+                    </p>
+                    <form class="form-subcri">
+                        <input class="form-control" type="email" required="" maxlength="50" name="Email"
+                            placeholder="Nhập email...">
+                        <button type="submit"><i class="fas fa-envelope"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.btn-card').click(function () {
+                var collapseElement = $(this).closest('.card').find('.collapse');
+                collapseElement.collapse('toggle');
+                $(this).toggleClass('collapsed');
+            });
+
+
+            $(function () {
+                $("#slider-range").slider({
+                    range: true,
+                    min: 0,
+                    max: 50,
+                    values: [0, 50],
+                    slide: function (event, ui) {
+                        $("#min-price").text(ui.values[0]);
+                        $("#max-price").text(ui.values[1]);
+                    }
+                });
+                $("#min-price").text($("#slider-range").slider("values", 0));
+                $("#max-price").text($("#slider-range").slider("values", 1));
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>
