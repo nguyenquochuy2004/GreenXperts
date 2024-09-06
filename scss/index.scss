@@ -217,6 +217,7 @@ $textcolor: #ffffff;
 
 .banner {
     position: relative;
+    margin-top: 60px;
 
     .list-banner {
         .banner {
@@ -734,6 +735,7 @@ $textcolor: #ffffff;
     .title-feedback {
         p {
             text-align: center;
+            font-weight: bold;
             margin-bottom: 0;
             font-size: 35px;
             text-transform: uppercase;

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./Font-Awesome-Pro/css/all.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" /> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -88,8 +89,6 @@
                         </a>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>
@@ -115,7 +114,7 @@
                             <div class="col-lg-3 col-md-6 col-6">
                                 <div class="product-item">
                                     <div class="product-img">
-                                        <a href=""><img src="./img/sp1.png" alt=""></a>
+                                        <a href="detail.html"><img src="./img/sp1.png" alt=""></a>
                                     </div>
                                     <a href="" class="product-name">
                                         [COMBO] Maxforce Quantum Vs Blattanex Cockroch Gel
@@ -305,7 +304,7 @@
                             <div class="card-header">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <h2 class="mb-0"> Sản phẩm </h2>
-                                    <button id="product" class="btn-card"> <i class="fas fa-chevron-down"></i></button>
+                                    <button id="product" class="btn-card"> <i class="fas fa-chevron-up"></i> </button>
                                 </div>
                             </div>
                             <div class="collapse show">
@@ -352,7 +351,7 @@
                             <div class="card-header">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <h2 class="mb-0">Địa chỉ nơi bán</h2>
-                                    <button id="city" class="btn-card"> <i class="fas fa-chevron-down"></i> </button>
+                                    <button id="city" class="btn-card"> <i class="fas fa-chevron-up"></i></button>
                                 </div>
                             </div>
                             <div class="collapse show">
@@ -385,7 +384,7 @@
                             <div class="card-header">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <h2 class="mb-0"> Cửa hàng</h2>
-                                    <button id="store" class="btn-card"> <i class="fas fa-chevron-down"></i> </button>
+                                    <button id="store" class="btn-card"> <i class="fas fa-chevron-up"></i> </button>
                                 </div>
                             </div>
                             <div class="collapse show">
@@ -461,7 +460,7 @@
                         <div class="title text-dark">
                             Tự hào là thành viên BNI và VPMA
                         </div>
-                        <div class="member-list">
+                        <div class="member-list" data-aos="fade-up-right">
                             <div class="member-item">
                                 <a>
                                     <img src="./img/logo2.png" alt="">
@@ -532,13 +531,13 @@
 
 
     <script>
+
         $(document).ready(function () {
             $('.btn-card').click(function () {
                 var collapseElement = $(this).closest('.card').find('.collapse');
                 collapseElement.collapse('toggle');
                 $(this).toggleClass('collapsed');
             });
-
 
             $(function () {
                 $("#slider-range").slider({
@@ -557,6 +556,24 @@
 
         });
 
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                offset: 0,              //thêm vào để khi ở cuối vẫn sẽ chạy
+                delay: 0,               // Độ trễ tính bằng millisecond cho mỗi phần tử
+                duration: 900,         // Thời gian chạy hiệu ứng tính bằng millisecond
+                easing: 'ease',         // Easing function (làm mềm chuyển động)
+                // once: true,             // Hiệu ứng không chạy lại khi cuộn
+                // mirror: true,           // Hiệu ứng có chạy khi cuộn ngược lại hay không
+            }
+        );
+        let scrollRef = 0;
+
+        window.addEventListener('scroll', function () {
+            scrollRef <= 10 ? scrollRef++ : AOS.refresh();
+        });
     </script>
 </body>
 

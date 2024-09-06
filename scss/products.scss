@@ -327,31 +327,59 @@ $textcolor: #ffffff;
             padding: 0;
             border: 0;
             h2{
-                font-size: 14px;
+                font-size: 16px;
+                font-weight: bold;
             }
             .btn-card {
                 border: 0;
                 color: #608127;
                 background: transparent;
-                 i {
-                    transition: transform 0.3s ease; 
-                    transform: rotate(180deg);
-
+                font-size: 18px;
+                i {
+                  transition: transform 0.3s ease;
                 }
-                .collapsed i {
-                    transform: rotate(180deg);
+                &.collapsed i {
+                  transform: rotate(180deg);
                 }
-                
-                
-            }
+              }
+              
         }
-        .collapse{
-            .card-body{
-                .label-cat{
+        .collapse {
+            .card-body {
+                .label-cat {
                     display: block;
+                    margin-top: 5px;
+                    input[type="radio"] {
+                        display: none;
+                    }
+                    .checkmark {
+                        margin-right: 5px;
+                        position: relative;
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        background-color: rgb(230, 230, 230);
+                        border-radius: 50%;
+                    }
+        
+                    // Khi radio button được chọn
+                    input[type="radio"]:checked + .checkmark {
+                        background-color: rgbrgb(230, 230, 230);
+                    }
+                    input[type="radio"]:checked + .checkmark:after {
+                        content: '';
+                        position: absolute;
+                        top: 5px;
+                        left: 5px;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        background-color: green;
+                    }
                 }
             }
         }
+        
     }
     .slider-wrapper {
         margin: 20px 0;
