@@ -22,6 +22,56 @@
 </head>
 
 <body>
+    <div class="head-mobile">
+        <div class="menu-mb">
+            <div class="header-mb">
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div>
+                    <img src="img/logo.jpg" alt="logo">
+                </div>
+            </div>
+
+            <div class="overlay"></div>
+
+            <div class="nav-mb">
+                <ul class="menu-list">
+                    <li><a href="">Giới thiệu</a></li>
+                    <li><a href="products.html">Sản phẩm </a>
+                        <ul class="submenu">
+                            <li><a href="">Chế phẩm kiểm soát côn trùng</a></li>
+                            <li><a href="">Diệt Mối - Phòng chống mối </a></li>
+                            <li><a href="">Máy móc - Thiết bị</a></li>
+                            <li><a href="">Hóa chất khử khuẩn</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Bách khoa côn trùng</a></li>
+                    <li><a href="">Tin tức</a> 
+                        <ul class="submenu">
+                            <li><a href="">Bản tin mới nhất</a></li>
+                            <li><a href="">Kiến thức chung về côn trùng</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Dịch vụ</a></li>
+                    <li><a href="">Tuyển dụng</a> </li>
+                    <li><a href="">Văn hóa Green Xperts</a>
+                        <ul class="submenu">
+                            <li><a href="">Chế phẩm kiểm soát côn trùng</a></li>
+                            <li><a href="">Diệt Mối - Phòng chống mối </a></li>
+                            <li><a href="">Máy móc - Thiết bị</a></li>
+                            <li><a href="">Hóa chất khử khuẩn</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="logo-mobile"><img src="./img/logo.png" alt="" style="width: 200px; height: 90px;"></div>
+        <div class="search-mb"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></div>
+
+    </div>
     <div class="topbar">
         <div class="header">
             <div class="container">
@@ -111,7 +161,7 @@
                 <div class="col-lg-9">
                     <div id="list-products">
                         <div class="row">
-                            <div class="col-lg-3 col-md-6 col-6">
+                            <div class="col-lg-3 col-md-4 col-6">
                                 <div class="product-item">
                                     <div class="product-img">
                                         <a href="detail.html"><img src="./img/sp1.png" alt=""></a>
@@ -131,7 +181,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-6 col-6">
+                            <div class="col-lg-3 col-md-4 col-6">
                                 <div class="product-item">
                                     <div class="product-img">
                                         <a href=""><img src="./img/sp1.png" alt=""></a>
@@ -151,7 +201,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-6 col-6">
+                            <div class="col-lg-3 col-md-4 col-6">
                                 <div class="product-item">
                                     <div class="product-img">
                                         <a href=""><img src="./img/sp1.png" alt=""></a>
@@ -171,7 +221,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-6 col-6">
+                            <div class="col-lg-3 col-md-4 col-6">
                                 <div class="product-item">
                                     <div class="product-img">
                                         <a href=""><img src="./img/sp1.png" alt=""></a>
@@ -191,7 +241,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-6 col-6">
+                            <div class="col-lg-3 col-md-4 col-6">
                                 <div class="product-item">
                                     <div class="product-img">
                                         <a href=""><img src="./img/sp1.png" alt=""></a>
@@ -211,7 +261,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-6 col-6">
+                            <div class="col-lg-3 col-md-4 col-6">
                                 <div class="product-item">
                                     <div class="product-img">
                                         <a href=""><img src="./img/sp1.png" alt=""></a>
@@ -231,7 +281,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-6 col-6">
+                            <div class="col-lg-3 col-md-4 col-6">
                                 <div class="product-item">
                                     <div class="product-img">
                                         <a href=""><img src="./img/sp1.png" alt=""></a>
@@ -251,7 +301,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-6 col-6">
+                            <div class="col-lg-3 col-md-4 col-6">
                                 <div class="product-item">
                                     <div class="product-img">
                                         <a href=""><img src="./img/sp1.png" alt=""></a>
@@ -573,6 +623,19 @@
 
         window.addEventListener('scroll', function () {
             scrollRef <= 10 ? scrollRef++ : AOS.refresh();
+        });
+
+
+        $(".hamburger").click(function () {
+            $(this).toggleClass("active");
+            $(".nav-mb").toggleClass("active");
+            $(".overlay").toggleClass("active");
+        });
+
+        $(".overlay").click(function () {
+            $(".hamburger").removeClass("active");
+            $(".nav-mb").removeClass("active");
+            $(".overlay").removeClass("active");
         });
     </script>
 </body>
